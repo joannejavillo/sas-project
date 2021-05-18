@@ -22,8 +22,7 @@ Drug.init(
         allowNull: false,
       },
       strength: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+        type: DataTypes.STRING, INTEGER, 
         validate: true,
       },
       classification: {
