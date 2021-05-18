@@ -1,18 +1,16 @@
 // import models
 const Drug = require('./Drug');
-//const Category = require('./Category');
 const Supplier = require('./Supplier');
-//const ProductTag = require('./ProductTag');
 
 // Drug belongsTo Supplier
-Drug.belongsTo(Suppplier, {
-  foreignKey: 'category_id',
+Drug.belongsTo(Supplier, {
+  foreignKey: 'supplier_id',
   onDelete: 'CASCADE',
 });
 
 // Supplier has many Drugs
 Supplier.hasMany(Drug, {
-  foreignKey: 'category_id',
+  foreignKey: 'supplier_id',
   onDelete: 'CASCADE',
 });
 

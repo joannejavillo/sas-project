@@ -1,11 +1,11 @@
 //import important parts of sequelize library
-const { Model, Datatypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 //import our database connection from config.js
 const sequelize = require('../config/connection');
 
 //initialize drug model (table) by extending off Sequelize's Model class
 
-class Drug extends Model {}
+class Drug extends Model { }
 
 // set up fields and rules for Drug model
 Drug.init(
@@ -22,29 +22,29 @@ Drug.init(
         allowNull: false,
       },
       strength: {
-        type: DataTypes.STRING, INTEGER, 
+        type: DataTypes.STRING, 
         validate: true,
       },
       classification: {
-        type: DataTypes.STRING, INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: true,
       },
 
       storage: {
-          type: Datatypes.STRING,
+          type: DataTypes.STRING,
           allowNull: false,
           validate: true,
       },
-
-      category_id: {
+      supplier_id: {
          type: DataTypes.INTEGER,
          references: {
-         model: 'category',
+         model: 'supplier',
          key: 'id',
         },
       }, 
     },
+
     {
       sequelize,
       timestamps: false,
