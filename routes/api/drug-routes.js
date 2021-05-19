@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Drug } = require('../../models');
+const { Supplier, Drug } = require('../../models');
 
 // The `/api/categories` endpoint
 // find all categories
@@ -7,8 +7,8 @@ const { Category, Drug } = require('../../models');
 
   router.get('/', async (req, res) => {  
   try {
-    const drugData = await Category.findAll({
-      include: [{ model: Drug }],
+    const drugData = await Drug.findAll({
+      include: [{ model: Supplier }],
     });
     res.status(200).json(drugData);
   } catch (err) {
