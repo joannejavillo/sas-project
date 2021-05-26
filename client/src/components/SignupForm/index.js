@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Form, Icon, Message } from 'semantic-ui-react'
+import { Container,Button, Form, Icon, Message } from 'semantic-ui-react'
 
 const SignUp = ({signup}) => (
-  <div>
+  <Container>
     <Message
       attached
       header='Welcome to Pharmacy Procurement-SAS Page!'
@@ -31,9 +31,9 @@ const SignUp = ({signup}) => (
     </Form>
     <Message attached='bottom' warning>
       <Icon name='help' />
-      Already signed up?&nbsp;<a href='#'>Login here</a>&nbsp;instead.
+      Already signed up?&nbsp;<a href='/LogInForm'>Login here</a>&nbsp;instead.
     </Message>
-  </div>
+  </Container>
 )
 
 export default SignUp
