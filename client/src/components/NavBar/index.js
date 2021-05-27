@@ -32,7 +32,7 @@ export default class NavBar extends Component {
           </Dropdown> */}
 
                 <Menu.Item position="right">
-                    <Button inverted color='grey'>Log Out</Button>
+                 <a href='/loginform'>  <Button inverted color='grey'>Log Out</Button></a>
                 </Menu.Item>
                 {/* </Menu> */}
             </Menu >

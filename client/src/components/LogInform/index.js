@@ -1,10 +1,15 @@
 import React from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Container,Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 
 const Login = () => (
+  <Container>
+     <Segment color='grey' inverted padded='very' vertical align>
+      <Header as='h1'>Welcome to RAH-Pharmacy Procurement-SAS Log In page</Header>
+      <Image centered circular src={'pharmacy_it.jpg'} size='massive' />
+    </Segment>
   <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
-      <Header as='h2' color='blue' textAlign='center'>
+      <Header as='h2' color='purple' textAlign='center'>
         <Image src='' /> Log-in to your account
       </Header>
       <Form size='large'>
@@ -28,6 +33,8 @@ const Login = () => (
       </Message>
     </Grid.Column>
   </Grid>
+  <Segment color='grey'inverted='very' vertical textAlign>email:Health.RAHPharmacyProcurement@sa.gov.au-2021</Segment>
+  </Container>
 )
 
 export default Login;
