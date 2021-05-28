@@ -1,6 +1,7 @@
 // import models
 const Drug = require('./Drug');
 const Supplier = require('./Supplier');
+const User = require ('./User');
 
 // Drug belongsTo Supplier
 Drug.belongsTo(Supplier, {
@@ -34,7 +35,6 @@ Supplier.hasMany(Drug, {
 
 module.exports = {
   Drug,
-  //Category,
   Supplier,
-  //ProductTag,
+  User,
 };
