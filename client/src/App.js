@@ -9,7 +9,8 @@ import SearchDrug from './pages/Drug'
 //import Form from './components/CreatePostForm'
 import "./App.css";
 import API from "./utils/Api";
-
+import './components/FontAwesomeIcons';
+//import Footer from './components/Footer';
 
 
 
@@ -34,9 +35,10 @@ function App() {
         <Switch>
           <Route exact path={"/"}>
             <Title />
+      
           </Route>
           <Route path={"/Signup"}>
-            <SignUp />
+            <SignUp /> 
           </Route>
           <Route path={"/LogInForm"}>
             <LogInForm />

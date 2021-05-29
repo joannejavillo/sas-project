@@ -1,5 +1,6 @@
 const seedDrug = require('./drug-seeds');
 const seedSupplier = require('./supplier-seeds');
+const seedUser = require('./user-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -10,6 +11,8 @@ const seedAll = async () => {
   console.log('\n----- SUPPLIER SEEDED -----\n');
   await seedDrug();
   console.log('\n----- DRUG SEEDED -----\n');
+  await seedUser();
+  console.log('\n----- USER SEEDED -----\n');
   process.exit(0);
 };
 

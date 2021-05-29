@@ -6,10 +6,12 @@ import {
   Segment
 } from 'semantic-ui-react'
 import SignUp from '../SignupForm';
+import Footer from '../Footer';
 
 
 const Title = ({name}) => {
   return (
+    <>
     <Container>
     <Segment color='grey'inverted padded='very' vertical>
       <Header as='h1'> Royal Adelaide Hospital - {name}</Header>
@@ -18,6 +20,9 @@ const Title = ({name}) => {
       <SignUp/>
     </Segment>
     </Container>
+    
+    <Footer> </Footer>
+    </>
   )
 }
 

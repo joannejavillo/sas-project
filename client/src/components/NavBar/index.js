@@ -6,6 +6,16 @@ export default class NavBar extends Component {
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
+    logout = () => {
+      fetch('/api/users/logout', {
+        method: 'POST'
+      }).then(response => {
+        if(response.ok){
+          window.location.href = '/loginform'
+        }
+      })
+    }
+
     render() {
         const { activeItem } = this.state
 
@@ -32,7 +42,7 @@ export default class NavBar extends Component {
           </Dropdown> */}
 
                 <Menu.Item position="right">
-                 <a href='/loginform'>  <Button inverted color='grey'>Log Out</Button></a>
+                 <Button onClick={this.logout} inverted color='grey'>Log Out</Button>
                 </Menu.Item>
                 {/* </Menu> */}
             </Menu >
