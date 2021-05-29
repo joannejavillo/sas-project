@@ -55,6 +55,7 @@ router.post('/login', async (req, res) => {
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
+    req.session.logged_in = false;
     // req.logout();
     // Remove the session variables
     req.session.destroy(() => {

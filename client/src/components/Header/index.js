@@ -9,19 +9,18 @@ import SignUp from '../SignupForm';
 import Footer from '../Footer';
 
 
-const Title = ({name}) => {
+const Title = ({ name }) => {
   return (
     <>
-    <Container>
-    <Segment color='grey'inverted padded='very' vertical>
-      <Header as='h1'> Royal Adelaide Hospital - {name}</Header>
-      <Image centered src={'RAH.jpeg'} size={'medium'}/>
-      <Header as='h3'> Pharmacy Procurement - SAS drugs - SOS page </Header>
-      <SignUp/>
-    </Segment>
-    </Container>
-    
-    <Footer> </Footer>
+      <Container>
+        <Segment color='grey' inverted padded='very' vertical>
+          <Header as='h1'> Royal Adelaide Hospital - {name}</Header>
+          <Image centered src={'RAH.jpeg'} size={'medium'} />
+          <Header as='h3'> Pharmacy Procurement - SAS drugs - SOS page </Header>
+          <SignUp />
+        </Segment>
+      </Container>
+      <Footer> </Footer>
     </>
   )
 }

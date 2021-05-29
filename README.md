@@ -3,8 +3,8 @@
 ![License](https://img.shields.io/badge/License-MIT-indigo)
 
 ## Description 
-- This SAS project was created using MERN.
-- The user will be able to login and see the main page which contains all the table for the SAS drugs 
+- This SAS  project was created using MERN.
+- The user will be able to login and see the main page which contains the table for the SAS drugs 
 -  If the user type the name of the drug it will filter out the drugs based on the letters that the user type.
    > If the user will type in lower case letters, it will give the user the names of the drugs that has that letter.
 ---
@@ -22,27 +22,32 @@
 ---
 
 ## Technologies
-NPM, React, MySQL, Sequelize, Bcrypt, Semantic-UI React, Axios Insomnia, Heroku
+NPM, React, MySQL, Sequelize, Bcrypt, Axios, Insomnia, Heroku
+
+New Technologies: Semantic-UI-React, React-Font awesome
 
 ---
 ## Links
- - Github: ()
+ - Github: https://github.com/joannejavillo/sas-project
  - Deployed link : ()
  
 
 ---
 ## Screenshots
-![screenshot-of-landing page]() "Main page- Filter: Ascending Order"
+![screenshot-of-api-get-drug](./assets/api/getdrug.png) "GET-drug API"
+---
+![screenshot-of-api-get-supplier](./assets/api/getsupplier.png) "GET-supplier API"
+---
+![screenshot-of-api-post-drug](./assets/api/postdrug.png) "POST-drug API" 
+---
+![screenshot-of-api-post-drug](./assets/api/postdrug2.png) "POST-drug API" 
+---
+![screenshot-of-api-post-supplier](./assets/api/postsupplier1.png) "POST-supplier API"
+---
+![screenshot-of-api-post-supplier](./assets/api/postsupplier2.png) "POST-supplier API"
 ---
 
-![screenshot-of-log-in-page]() "Filter: Descending Order"
 ---
-
-![screenshot-of-main-page](./assets/sortname.png) "Sort by name" 
----
-
----
-
 ## Challenges
  - Deploying in Heroku is quite challenging
 ---

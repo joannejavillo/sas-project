@@ -7,7 +7,7 @@ const { Supplier, Drug } = require('../../models');
 
   router.get('/', async (req, res) => {  
   try {
-    console.log("test")
+    //console.log("test")
     const drugData = await Drug.findAll({
       include: [{ model: Supplier }],
     });

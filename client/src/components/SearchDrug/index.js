@@ -19,7 +19,6 @@ function SearchDrug(props) {
   const handleSearchTermChange = (e) => {
     setSearchTerm(e.target.value);
   }
-
   return (
     <>
       <Container>
@@ -87,7 +86,6 @@ function SearchDrug(props) {
       <Footer>  </Footer>
     </>
   );
-
 }
 
 export default SearchDrug;

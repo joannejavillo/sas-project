@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container,Button, Form, Icon, Message } from 'semantic-ui-react'
+import { Container, Button, Form, Icon, Message } from 'semantic-ui-react'
 
-const SignUp = ({signup}) => (
+const SignUp = ({ signup }) => (
   <Container>
     <Message
       attached
@@ -24,7 +24,7 @@ const SignUp = ({signup}) => (
         />
       </Form.Group>
       <Form.Input label='Username' placeholder='Username' type='text' />
-      <Form.Input label='E-mail address' placeholder='E-mail' type='text'/>
+      <Form.Input label='E-mail address' placeholder='E-mail' type='text' />
       <Form.Input label='Password' type='password' />
       <Form.Checkbox inline label='I agree to the terms and conditions' />
       <Button color='purple'>Submit</Button>

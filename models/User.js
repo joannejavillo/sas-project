@@ -2,9 +2,6 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-
-
-
 // module.exports = function(sequelize, DataTypes) {
 //   var User = sequelize.define("User", {
 //     // The email cannot be null, and must be a proper email before creation
