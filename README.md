@@ -24,12 +24,12 @@
 ## Technologies
 NPM, React, MySQL, Sequelize, Bcrypt, Axios, Insomnia, Heroku
 
-New Technologies: Semantic-UI-React, React-Font awesome
+New Technologies/Library: Semantic-UI-React, React-Font awesome
 
 ---
 ## Links
  - Github: https://github.com/joannejavillo/sas-project
- - Deployed link : ()
+ - Deployed link : https://frozen-taiga-34472.herokuapp.com/
  
 
 ---
@@ -49,7 +49,7 @@ New Technologies: Semantic-UI-React, React-Font awesome
 
 ---
 ## Challenges
- - Deploying in Heroku is quite challenging
+ - Deploying in Heroku is challenging
 ---
 ## License
 - MIT
