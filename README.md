@@ -3,11 +3,10 @@
 ![License](https://img.shields.io/badge/License-MIT-indigo)
 
 ## Description 
-- This SAS  project was created using MERN.
+- This SAS -SOS page was created using MERN.
 - The user will be able to login and see the main page which contains the table for the SAS drugs 
--  If the user type the name of the drug it will filter out the drugs based on the letters that the user type.
+-  If the user type the name of the drug it will filter out the drugs based on the first letter(Uppecase) that the user type.
    > If the user will type in lower case letters, it will give the user the names of the drugs that has that letter.
----
 ---
 
 # Table of Contents 
@@ -31,7 +30,6 @@ New Technologies/Library: Semantic-UI-React, React-Font awesome
  - Github: https://github.com/joannejavillo/sas-project
  - Deployed link : https://frozen-taiga-34472.herokuapp.com/
  
-
 ---
 ## Screenshots
 ![screenshot-of-api-get-drug](./assets/api/getdrug.png) "GET-drug API"
@@ -46,7 +44,12 @@ New Technologies/Library: Semantic-UI-React, React-Font awesome
 ---
 ![screenshot-of-api-post-supplier](./assets/api/postsupplier2.png) "POST-supplier API"
 ---
-
+![screenshot-of-app-initial-page](./assets/app/initpage.png) "Initial page"
+---
+![screenshot-of-app-login-page](./assets/app/login1.png) "Login page"
+---
+ ![screenshot-of-app-main-page](./assets/app/main.png) "Main page"
+---
 ---
 ## Challenges
  - Deploying in Heroku is challenging

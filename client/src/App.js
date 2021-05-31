@@ -20,13 +20,13 @@ function App() {
   useEffect(() => {
     // API call occurs here. 
     API.getDrug()
-    .then(res => {
-      setDrugs(res.data)
-    })
-    .catch(err => console.log(err));
+      .then(res => {
+        setDrugs(res.data)
+      })
+      .catch(err => console.log(err));
   }, [])
 
-  
+
 
 
   return (
@@ -35,10 +35,10 @@ function App() {
         <Switch>
           <Route exact path={"/"}>
             <Title />
-      
+
           </Route>
           <Route path={"/Signup"}>
-            <SignUp /> 
+            <SignUp />
           </Route>
           <Route path={"/LogInForm"}>
             <LogInForm />

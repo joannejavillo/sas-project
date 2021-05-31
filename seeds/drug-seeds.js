@@ -50,6 +50,13 @@ const drugData = [
         storage: 'Room Temperature',
         supplier_id: 5,
     },
+    {
+        drug_name: 'Aspirin Bayer Injection',
+        strength: '500mg',
+        classification: 'SAS',
+        storage: 'Room Temperature',
+        supplier_id: 1,
+    },
 ];
 
 const seedDrug = () => Drug.bulkCreate(drugData);
